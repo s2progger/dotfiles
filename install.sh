@@ -1,8 +1,6 @@
 #!/bin/sh
 set -e
 
-GITHUB_USERNAME="s2progger"
-
 echo "[INSTALL] Ohmyzsh"
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
@@ -14,7 +12,7 @@ export BINDIR=$HOME/.local/bin
 sh -c "$(curl -fsLS chezmoi.io/get)"
 
 echo "[SETUP] Chezmoi"
-$BINDIR/chezmoi init $GITHUB_USERNAME
+$BINDIR/chezmoi init git@github.com:s2progger/dotfiles.git
 
 echo "[APPLY] apply dotfiles"
 $BINDIR/chezmoi apply
