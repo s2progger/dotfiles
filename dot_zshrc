@@ -152,4 +152,5 @@ alias bzt="bazel test"
 alias ibzr="ibazel -run_command_before clear run"
 alias ibzb="ibazel -run_command_before clear build"
 alias ibzt="ibazel -run_command_before clear test"
+alias tm="tmux new-session -A -s DevEnv"
 
